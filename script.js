@@ -16,7 +16,7 @@ function getWeather() {
                     "<img src='" + icon + "' height='200px' width='200px'>";
             }
             console.log(a.weather[0].id)
-            if (a.weather[0].id === 802 || a.weather[0].id === 804) {
+            if (a.weather[0].id === 802 || a.weather[0].id === 803 || a.weather[0].id === 804) {
                 document.getElementsByTagName('body')[0].style.background = 'linear-gradient(#252839, grey)';
             } else if (a.weather[0].id === 800) {
                 document.getElementsByTagName('body')[0].style.background = 'linear-gradient(#252839, lightblue)';
