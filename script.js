@@ -18,7 +18,9 @@ function getWeather() {
             console.log(a.weather[0].id)
             if (a.weather[0].id === 802 || a.weather[0].id === 804) {
                 document.getElementsByTagName('body')[0].style.background = 'linear-gradient(#252839, grey)';
-            } else {
+            } else if (a.weather[0].id === 800) {
+                document.getElementsByTagName('body')[0].style.background = 'linear-gradient(#252839, lightblue)';
+            }else {
                 document.getElementsByTagName('body')[0].style.backgroundColor = '#252839';
             }
     });
