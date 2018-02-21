@@ -3,10 +3,10 @@
  */
 function getWeather() {
     let zip = document.getElementsByName("zip")[0].value;
-    let url = "http://api.openweathermap.org/data/2.5/weather?zip=" + zip + "&appid=d8ac38bdc31711ea419ce14f266a7082&units=imperial";
+    let url = "https://api.openweathermap.org/data/2.5/weather?zip=" + zip + "&appid=d8ac38bdc31711ea419ce14f266a7082&units=imperial";
     let icon = "";
 
-    $.getJSON("http://maps.googleapis.com/maps/api/geocode/json?address=" + zip + "&%20sensor=false", function(a) {
+    $.getJSON("https://maps.googleapis.com/maps/api/geocode/json?address=" + zip + "&%20sensor=false", function(a) {
         let latitude = a.results[0].geometry.location.lat;
         let longitude = a.results[0].geometry.location.lng;
         $.getJSON("https://fcc-weather-api.glitch.me/api/current?lat=" + latitude + "&lon=" + longitude, function(a) {
