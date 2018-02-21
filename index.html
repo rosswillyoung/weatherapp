@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+</head>
+<body>
+    <div id="container">
+        <h1>CURRENT LOCAL WEATHER</h1>
+        <form action="javascript:getWeather()">
+            <input type="text" name="zip" placeholder="Enter a zip code.">
+        </form>
+        <div id="submit">
+            Type your zip code and press Enter to get the current local weather
+        </div>
+        <div id="weather">
+        </div>
+       <div id="icon">
+       </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+</body>
+</html>

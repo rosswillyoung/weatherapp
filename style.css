@@ -1,0 +1,41 @@
+:root {
+    --main-bg-color: #252839;
+    --main-text-color: #B5B5B7;
+    --main-font: Ubuntu;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: var(--main-font);
+    height: 100vh;
+    width: 100%;
+    margin: 0px auto;
+}
+
+#container {
+    width: 60%;
+    margin: 10vh auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+input {
+    background-color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align:center;
+    margin: 20px auto 10px auto;
+}
+
+#container ul {
+    list-style: none;
+}
+
+#container img {
+    margin-bottom: 0;
+}
